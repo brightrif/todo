@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"> -->
+  <title>TodoApp - Create A Todo With Django</title>
+</head>
+  <body>
+  {% block content %}
+  {% endblock %}
+  <script src="{% static 'js/bootstrap.min.js' %}""></script>
+  </body>
+</html>
