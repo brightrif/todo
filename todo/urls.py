@@ -21,4 +21,5 @@ app_name = "todoofz"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.TaskListView.as_view(), name="listall"),
+    path("toggle_done/<int:task_id>/", views.task_done, name="task_toggle_done"),
 ]
